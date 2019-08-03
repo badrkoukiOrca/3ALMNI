@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:padding="40dp"
+    android:padding="20dp"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
     tools:context=".register">
@@ -36,11 +36,11 @@
 
 
             <EditText
-                android:id="@+id/nom"
+                android:id="@+id/nomprenom"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:textAlignment="center"
-                android:hint="Nom"
+                android:hint="Nom et Prenom"
                 android:layout_marginTop="180dp"
                 android:textColorHint="#0575E6"
                 android:inputType="text"
@@ -49,15 +49,15 @@
                 android:layout_centerHorizontal="true"
                 />
             <EditText
-                android:id="@+id/prenom"
-                android:layout_below="@id/nom"
+                android:id="@+id/email"
+                android:layout_below="@id/nomprenom"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:textAlignment="center"
-                android:hint="Prénom"
+                android:hint="Email"
                 android:layout_marginTop="20dp"
                 android:textColorHint="#0575E6"
-                android:inputType="text"
+                android:inputType="textEmailAddress"
                 android:textColor="#0575E6"
                 android:background="@drawable/roundeditext"
                 android:layout_centerHorizontal="true"
@@ -74,7 +74,7 @@
                 android:inputType="textPassword"
                 android:textColor="#0575E6"
                 android:layout_marginTop="20dp"
-                android:layout_below="@id/prenom"
+                android:layout_below="@id/email"
                 android:textColorHint="#0575E6"
                 android:layout_centerInParent="true"
                 android:background="@drawable/roundeditext"
@@ -95,6 +95,21 @@
                 />
 
             <EditText
+                android:id="@+id/specialite"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:hint="Spécialité"
+                android:inputType="textPassword"
+                android:textColor="#0575E6"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/niveau"
+                android:textColorHint="#0575E6"
+                android:layout_centerInParent="true"
+                android:background="@drawable/roundeditext"
+                />
+
+            <EditText
                 android:id="@+id/matieresouhaitee"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
@@ -103,7 +118,7 @@
                 android:inputType="text"
                 android:textColor="#0575E6"
                 android:layout_marginTop="20dp"
-                android:layout_below="@id/niveau"
+                android:layout_below="@id/specialite"
                 android:textColorHint="#0575E6"
                 android:layout_centerInParent="true"
                 android:background="@drawable/roundeditext"
@@ -124,7 +139,7 @@
                 android:background="@drawable/roundbtn"
                 android:layout_centerHorizontal="true"
                 android:textColor="#FFF"
-                android:text="Connexion"/>
+                android:text="Inscription"/>
 
 
 

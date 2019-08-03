@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".CreationFormation">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:background="@drawable/gradient_background"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true"
+            android:backgroundTint="#FFF"
+            android:background="@drawable/instagram"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <EditText
+            android:padding="5dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/search_text"
+            android:drawableRight="@android:drawable/ic_menu_search" />
+
+    </RelativeLayout>
+
+
+
+
+<LinearLayout
+    android:layout_above="@id/footer"
+    android:layout_below="@id/header"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+    <TextView
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:text="Création formation"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:hint="Nom"
+        android:inputType="text"
+        android:textColor="#0575E6"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#0575E6"
+        android:layout_centerInParent="true"
+        android:background="@drawable/roundeditext"
+        />
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:hint="Description"
+        android:inputType="text"
+        android:textColor="#0575E6"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/nom"
+        android:textColorHint="#0575E6"
+        android:layout_centerInParent="true"
+        android:background="@drawable/roundeditext"
+        />
+
+    <EditText
+        android:id="@+id/video"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:hint="Lien Vidéo"
+        android:inputType="text"
+        android:textColor="#0575E6"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/description"
+        android:textColorHint="#0575E6"
+        android:layout_centerInParent="true"
+        android:background="@drawable/roundeditext"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <Button
+        android:layout_below="@id/description"
+        android:id="@+id/submitImage"
+        android:layout_width="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbtn"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFF"
+        android:text="Import Image"/>
+
+    <Button
+        android:layout_below="@id/submitImage"
+        android:id="@+id/submitPdf"
+        android:layout_width="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbtn"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFF"
+        android:text="Import PDF"/>
+
+    </LinearLayout>
+    <Button
+        android:layout_below="@id/submitImage"
+        android:id="@+id/submitCreation"
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbtn"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFF"
+        android:text="Ajouter"/>
+
+</LinearLayout>
+
+
+    <RelativeLayout
+        android:background="@drawable/gradient_background"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/footer"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/user"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <LinearLayout
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/round_layout"
+                android:layout_width="100dp"
+                android:gravity="center"
+                android:layout_height="90dp">
+                <ImageView
+                    android:src="@drawable/home"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+            <ImageView
+                android:layout_marginLeft="70dp"
+                android:src="@drawable/setting"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
