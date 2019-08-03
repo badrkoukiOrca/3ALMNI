@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
-
                 startActivity(new Intent(MainActivity.this,register.class));
                 //Toast.makeText(MainActivity.this,"Test",Toast.LENGTH_SHORT).show();
             }
