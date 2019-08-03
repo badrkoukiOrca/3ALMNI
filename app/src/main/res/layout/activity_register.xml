@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="40dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".register">
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="#B4FFFFFF"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            >
+
+
+
+            <ImageView
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/instagram"
+                android:layout_width="75dp"
+                android:layout_height="75dp" />
+
+
+            <EditText
+                android:id="@+id/nom"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:hint="Nom"
+                android:layout_marginTop="180dp"
+                android:textColorHint="#0575E6"
+                android:inputType="text"
+                android:textColor="#0575E6"
+                android:background="@drawable/roundeditext"
+                android:layout_centerHorizontal="true"
+                />
+            <EditText
+                android:id="@+id/prenom"
+                android:layout_below="@id/nom"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:hint="Prénom"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#0575E6"
+                android:inputType="text"
+                android:textColor="#0575E6"
+                android:background="@drawable/roundeditext"
+                android:layout_centerHorizontal="true"
+                />
+
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:hint="Mot de passe"
+                android:inputType="textPassword"
+                android:textColor="#0575E6"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/prenom"
+                android:textColorHint="#0575E6"
+                android:layout_centerInParent="true"
+                android:background="@drawable/roundeditext"
+                />
+            <EditText
+                android:id="@+id/niveau"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:hint="Niveau"
+                android:inputType="textPassword"
+                android:textColor="#0575E6"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/password"
+                android:textColorHint="#0575E6"
+                android:layout_centerInParent="true"
+                android:background="@drawable/roundeditext"
+                />
+
+            <EditText
+                android:id="@+id/matieresouhaitee"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:hint="matière souhaitée"
+                android:inputType="text"
+                android:textColor="#0575E6"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/niveau"
+                android:textColorHint="#0575E6"
+                android:layout_centerInParent="true"
+                android:background="@drawable/roundeditext"
+                />
+
+
+
+
+
+
+
+            <Button
+                android:layout_below="@id/matieresouhaitee"
+                android:id="@+id/submitLogin"
+                android:layout_width="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundbtn"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FFF"
+                android:text="Connexion"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_alignParentBottom="true"
+                android:text="vous avez déja un compte"
+                android:layout_below="@id/submitLogin"
+                android:layout_marginTop="20dp"
+                android:textColor="#000" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

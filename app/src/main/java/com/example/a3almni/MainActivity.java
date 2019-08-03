@@ -1,5 +1,6 @@
 package com.example.a3almni;
 
+import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,7 +15,9 @@ public class MainActivity extends AppCompatActivity {
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
-                Toast.makeText(MainActivity.this,"Test",Toast.LENGTH_SHORT).show();
+
+                startActivity(new Intent(MainActivity.this,register.class));
+                //Toast.makeText(MainActivity.this,"Test",Toast.LENGTH_SHORT).show();
             }
         }, 4000);   //5 seconds
     }

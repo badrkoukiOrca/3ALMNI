@@ -3,22 +3,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:padding="40dp"
+
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
     tools:context=".login">
 
-
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="20dp"
+    android:backgroundTint="#B4FFFFFF"
+    tools:ignore="MissingConstraints">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
 
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:layout_alignParentTop="true"
-            />
-        <!--android:src="@drawable/headertest2"-->
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/instagram"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
 
 
         <EditText
@@ -27,13 +40,14 @@
             android:layout_height="50dp"
             android:textAlignment="center"
             android:hint="Adresse email"
-            android:textColorHint="#2B32B2"
+            android:layout_marginTop="250dp"
+            android:textColorHint="#0575E6"
             android:inputType="textEmailAddress"
-            android:textColor="#2B32B2"
-
-            android:layout_centerInParent="true"
+            android:textColor="#0575E6"
+            android:background="@drawable/roundeditext"
+            android:layout_centerHorizontal="true"
             />
-        <!--android:background="@drawable/roundeditext"-->
+
 
 
 
@@ -44,17 +58,19 @@
             android:textAlignment="center"
             android:hint="Mot de passe"
             android:inputType="textPassword"
-            android:textColor="#2B32B2"
+            android:textColor="#0575E6"
             android:layout_marginTop="20dp"
             android:layout_below="@id/email"
-            android:textColorHint="#2B32B2"
+            android:textColorHint="#0575E6"
             android:layout_centerInParent="true"
+            android:background="@drawable/roundeditext"
             />
-       <!-- android:background="@drawable/roundeditext"-->
+
 
 
 
         <TextView
+            android:id="@+id/oublie"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:textAlignment="textEnd"
@@ -65,16 +81,17 @@
             android:text="Mot de passe oublié ?"/>
 
         <Button
+            android:layout_below="@id/oublie"
             android:id="@+id/submitLogin"
             android:layout_width="200dp"
+            android:layout_marginTop="50dp"
             android:layout_height="wrap_content"
-
-            android:layout_alignParentBottom="true"
+            android:background="@drawable/roundbtn"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="90dp"
             android:textColor="#FFF"
             android:text="Connexion"/>
-        <!--android:background="@drawable/roundbtn"-->
+
 
 
         <TextView
@@ -83,21 +100,14 @@
             android:textAlignment="center"
             android:layout_alignParentBottom="true"
             android:text="Créer compte"
-            android:layout_above="@id/progressBar"
+
             android:layout_marginBottom="20dp"
             android:textColor="#000" />
-        <ProgressBar
-            android:id="@+id/progressBar"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:indeterminate="false"
-            android:max="100"
-            android:background="#2B32B2"
-            android:progress="0" />
+
 
     </RelativeLayout>
+</android.support.v7.widget.CardView>
+
 
 
 
